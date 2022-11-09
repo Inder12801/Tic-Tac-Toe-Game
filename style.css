@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Lato:ital,wght@1,900&family=Ubuntu:ital,wght@0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #231955;
+  color: #f37878;
+  font-family: "DynaPuff", cursive;
+  font-size: 4vmax;
+}
+h1 span {
+  color: #fff80a;
+  margin: 0 5px;
+}
+
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  min-width: 95vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44vw;
+  min-width: 360px;
+  height: 100px;
+  margin: 20px 0;
+}
+.gameBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1%;
+  /* background-color: #319da0; */
+  width: 44vw;
+  min-width: 350px;
+  min-height: 360px;
+  height: 44vw;
+  margin: 20px 0px;
+  font-family: "DynaPuff", cursive;
+}
+.choiceBox {
+  /* width: 100px;
+  height: 100px; */
+  background-color: #319da0;
+  color: #2a0944;
+  font-size: 12vw;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.choiceBox:hover {
+  /* background-color: rgba(240, 128, 128, 0.384); */
+  background-color: #ff1e00;
+}
+
+.greet {
+  font-size: 3.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.info {
+  font-size: 2.8rem;
+  font-family: "DynaPuff", cursive;
+  color: #231955;
+  width: 100%;
+  text-align: center;
+  /* background-color: #green; */
+}
+
+#reset {
+  font-size: 1.4rem;
+  font-family: "Ubuntu", sans-serif;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ff1e00;
+  color: #ddddcf;
+  border: none;
+}
+
+/* #reset:active {
+  transform: translateY(2px);
+} */
+
+/* CSS */
+#reset {
+  font-family: "Ubuntu", sans-serif;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #ff1e00 0,
+    #ff1e00 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(204, 197, 221, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Ubuntu", sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  top: 15px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 25px;
+}
+
+#reset:focus {
+  box-shadow: #ff1e00 0 0 0 1.5px inset, rgba(232, 229, 238, 0.4) 0 2px 4px,
+    rgba(212, 203, 231, 0.3) 0 7px 13px -3px, #ff1e00 0 -3px 0 inset;
+}
+
+#reset:hover {
+  box-shadow: rgba(196, 184, 223, 0.4) 0 4px 8px,
+    rgba(198, 188, 218, 0.3) 0 7px 13px -3px, #ff1e00 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#reset:active {
+  box-shadow: #ff1e00 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* ========================================================*/
+
+/* ======================================================== */
